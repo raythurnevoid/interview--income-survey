@@ -1,0 +1,53 @@
+button {
+	all: unset;
+}
+
+button.primary,
+button.secondary {
+	border-radius: 8px;
+	height: 40px;
+	padding-inline: 16px;
+	cursor: pointer;
+	min-width: 8ch;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--button--bg-color);
+
+	&:hover {
+		background-color: hsl(from var(--button--bg-color) h s 50);
+
+		&:active {
+			background-color: hsl(from var(--button--bg-color) h s 40);
+		}
+	}
+
+	&:focus {
+		outline: solid 3px hsl(from var(--button--bg-color) h s 30);
+	}
+
+	span {
+		color: var(--button--text-color);
+	}
+}
+
+button.primary {
+	--button--bg-color: var(--color--primary);
+	--button--text-color: var(--color--text--on-dark);
+}
+
+button.secondary {
+	--button--bg-color: var(--color--secondary);
+	--button--text-color: var(--color--text--on-dark);
+}
+
+th button {
+	&:hover {
+		background-color: hsl(from var(--color--secondary) h s 70);
+
+		&:active {
+			background-color: hsl(from var(--color--secondary) h s 60);
+		}
+	}
+}

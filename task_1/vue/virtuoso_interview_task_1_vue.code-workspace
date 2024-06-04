@@ -1,0 +1,56 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#17e484",
+			"activityBar.inactiveForeground": "#313131",
+			"activityBar.activeBackground": "#0d804a",
+			"activityBar.foreground": "#010033",
+			"activityBar.activeBorder": "#010033",
+			"activityBarBadge.background": "#010033",
+			"activityBarBadge.foreground": "#e7e7e7"
+		},
+		"editor.detectIndentation": false,
+		"editor.formatOnSave": true,
+		"editor.insertSpaces": false,
+		"files.eol": "\n",
+		"typescript.tsdk": "node_modules/typescript/lib",
+		"typescript.enablePromptUseWorkspaceTsdk": true,
+		"typescript.preferences.importModuleSpecifier": "shortest",
+		"git.rebaseWhenSync": true,
+		"git.fetchOnPull": true,
+		"prettier.prettierPath": "node_modules/prettier/index.cjs",
+		"markdown.copyFiles.destination": {
+			"docs/**/*": "/docs/assets/${documentFileName}/${fileName}"
+		},
+		"[vue]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[json]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[javascript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[html]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+	},
+	"extensions": {
+		"recommendations": [
+			"esbenp.prettier-vscode",
+			"usernamehw.errorlens",
+			"pflannery.vscode-versionlens",
+			"vscode-icons-team.vscode-icons",
+			"ms-azuretools.vscode-docker",
+			"Vue.volar"
+		]
+	}
+}

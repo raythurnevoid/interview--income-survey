@@ -1,0 +1,48 @@
+label.input-box {
+	position: relative;
+
+	display: inline-flex;
+	flex-direction: column;
+	gap: 8px;
+
+	border-radius: 8px;
+	padding: 8px;
+	border: solid var(--color--secondary) 1px;
+	background: var(--color--surface);
+
+	height: 56px;
+	min-width: 170px;
+
+	span {
+		font-size: 0.75em;
+		color: var(--color--secondary-text);
+	}
+
+	input {
+		font-size: 0.95em;
+		letter-spacing: 0.02em;
+		position: absolute;
+		border: none 0px;
+		background: none;
+		inset: 0;
+		padding-inline: inherit;
+		padding-block-start: 20px;
+		border-radius: inherit;
+		outline-color: var(--color--secondary);
+		outline-offset: 2px;
+		font-family: unset;
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active {
+		-webkit-background-clip: text;
+	}
+
+	input[type="date"] {
+		font-size: 1em;
+		font-family: "Courier New", Courier, monospace;
+		letter-spacing: -1px;
+	}
+}
